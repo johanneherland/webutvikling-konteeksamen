@@ -5,18 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reisebyrå</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Kobler til css-fil -->
+    <link rel="stylesheet" href="ikoner/css/fontawesome.css"> <!-- Kobler til FontAwesome ikonbruk -->
+    <link rel="stylesheet" href="ikoner/css/solid.css"> <!-- Kobler til fil for basic ikoner -->
+    <link rel="stylesheet" href="ikoner/css/brands.css"> <!-- Kobler til brands i FontAwesome -->
 </head>
 <body>
+
+    <!-- Global header med navigasjon, logo og linker -->
     <header>
-        <nav></nav>
+        <!-- Toppområde del 1 skal inneholde søke-ikon (linker til bestillingssiden), bruker-ikon (linker til «Min side») -->
+
+        <!-- Toppområde del 2 skal inneholde logo og navigasjon -->
+        <a href="index.html" class="logo"><img src="Bilder/fav.png" alt="logo"></a> <!-- Logo med link til hovedsiden -->
+        <nav>
+            <a href="index.html#tips">Tips og inspirasjon</a> <!-- Link til Tips og inspirasjon på forsiden -->
+            <a href="hotell.html">Hotell</a> <!-- Link til hotell.html -->
+            <a href="https://www.norwegian.no" target="_blank">Fly</a> <!-- Link til Norwegian som åpnes i ny fane -->
+            <a href="#footer">Kontakt</a> <!-- Link til footer på den aktuelle siden -->
+        </nav>
     </header>
 
     <main>
 
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <section id="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
+            <img src="Flagg/sweden.png">
+            <p>Sverige</p>
+            <img src="Flagg/denmark.png">
+            <p>Danmark</p>
+            <img src="Flagg/norway.png">
+            <p>Norge</p>
+            <img src="Flagg/finland.png">
+            <p>Suomi</p>
+            <img src="Flagg/netherlands.png">
+            <p>Nederland</p>
+        </section>
+        <section id="betaling">
+            <h3>BETALINGSMETODER</h3>
+        </section>
+        <section id="nyheter">
+            <h3>NYHETER OG TILBUD</h3>
+        </section>
+        <section id="service">
+            <h3>KUNDESERVICE</h3>
+        </section>
+        <section id="some">
+            <h3>SOSIALE MEDIER</h3>
+            <ul> 
+                <!-- Instagram-ikon med link -->
+                <li>
+                    <a href="instagram.com">
+                        <i class="fa-brands fa-instagram" aria-label="Instagram-ikon"></i> 
+                    </a>
+                </li>
+                <!-- Facebook-ikon med link -->
+                <li>
+                    <a href="facebook.com">
+                        <i class="fa-brands fa-facebook-f" aria-label="Facebook-ikon"></i>
+                    </a>
+                </li>
+                <!-- Pinterest-ikon -->
+                <li>
+                    <a href="pinterest.com">
+                        <i class="fa-brands fa-pinterest-p" aria-label="Pinterest-ikon"></i>
+                    </a>
+                </li> 
+                <!-- TikTok-ikon -->
+                <li>
+                    <a href="tiktok.com">
+                        <i class="fa-brands fa-tiktok" aria-label="TikTok-ikon"></i>
+                    </a>
+                </li> 
+                <!-- Youtube-ikon -->
+                <li>
+                    <a href="youtube.com">
+                        <i class="fa-brands fa-youtube" aria-label="Youtube-ikon"></i>
+                    </a>
+                </li> 
+            </ul>
+        </section>
     </footer>
 </body>
 </html>
