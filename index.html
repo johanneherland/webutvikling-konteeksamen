@@ -63,30 +63,30 @@
             </a>
             <form>
                 <label for="avreise" id="avreise">Fra</label>
-                <select name="avreise" id="avreise">
+                <select name="avreise" id="avreise" required>
                     <option value="OSL">Oslo Lufthavn</option>
                     <option value="TRF">Sandefjord Lufthavn Torp</option>
                     <option value="BGO">Bergen Lufthavn Flesland</option>
                     <option value="ALF">Alta Lufthavn</option>
                 </select> <!-- https://www.w3schools.com/tags/tag_select.asp -->
                 <label for="destinasjon" id="destinasjon">Til</label>
-                <select name="destinasjon" id="destinasjon">
+                <select name="destinasjon" id="destinasjon" required>
                     <option value="ALB">Albania</option>
                     <option value="DNK">Danmark</option>
                     <option value="FIN">Finland</option>
                     <option value="GRC">Hellas</option>
                 </select>
                 <label for="lengde" id="lengde">Reiselengde</label>
-                <select name="lengde" id="lengde">
+                <select name="lengde" id="lengde" required>
                     <option value="-1">Mindre enn 1 uke</option>
                     <option value="1">1 uke</option>
                     <option value="2">2 uker</option>
                     <option value="2+">Mer enn 2 uker</option>
                 </select>
                 <label for="dato" id="dato">Velg dato</label>
-                <input name="dato" type="date" min="2025-01-01">
+                <input name="dato" type="date" min="2025-01-01" required>
                 <label for="antall" id="antall">Antall reisende</label>
-                <input name="antall" type="number" min="1">
+                <input name="antall" type="number" min="1" required>
                 <input type="submit" value="Søk">
             </form>
         </section>
@@ -104,18 +104,59 @@
     <main>
         <section id="tilbud">
             <article>
-                <h4>Få ekslusive tilbud</h4> <!-- Usikker på headertype-->
+                <h3>Få ekslusive tilbud</h3> <!-- Usikker på headertype-->
                 <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
             </article>
             <article>
-                <h4>Billige restplasser</h4> <!-- Usikker på headertype-->
+                <h3>Billige restplasser</h3> <!-- Usikker på headertype-->
                 <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
             </article>
             <article>
-                <h4>Mars - spar opp til 5000,-</h4> <!-- Usikker på headertype-->
+                <h3>Mars - spar opp til 5000,-</h3> <!-- Usikker på headertype-->
                 <a href="#">Sikre deg et feriekupp<i class="fa-solid fa-angles-right"></i></a>
             </article>
         </section>
+
+        <section>
+            <h2>Tips og inspirasjon</h2>
+            <article>
+                <img src="#">
+                <h3>Greske favoritter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Fra kr 3970<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article>
+                <img src="#">
+                <h3>Solskinnspriser - bestill i dag!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Fra kr 3203<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article>
+                <img src="#">
+                <h3>Storbyferie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article>
+                <img src="#">
+                <h3>Besøk påskefavoritten London</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Fra kr 2150<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article>
+                <img src="#">
+                <h3>Skiferie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article>
+                <img src="#">
+                <h3>Spar opptil 7000,- i sommer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </section>
+
     </main>
 
     <footer id="footer">
@@ -156,9 +197,11 @@
             <section>
                 <form>
                     <label for="email">Med deg på nyhetsbrev her</label>
-                    <input type="email" id="email" name="email">
-                    <!-- Valgte å bruke input type email, W3 Schools forklarer at "The input value is automatically validated to ensure it is a properly formatted e-mail address." -->
-                    <input type="submit" value="Send">
+                    <fieldset>
+                        <input type="email" id="email" name="email">
+                        <!-- Valgte å bruke input type email, W3 Schools forklarer at "The input value is automatically validated to ensure it is a properly formatted e-mail address." -->
+                        <input type="submit" value="Send">
+                    </fieldset>
                 </form>
             </section>
             <a href="#">Kjøp reisegavekort</a>
