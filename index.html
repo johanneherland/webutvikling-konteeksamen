@@ -21,10 +21,10 @@
             </button>
         </a>
         <a href="#">
-        <button type="button">
-            <i class="fa-regular fa-user"></i>
-            Min side
-        </button>
+            <button type="button">
+                <i class="fa-regular fa-user"></i>
+                Min side
+            </button>
         </a>
         <!-- Toppområde del 2 skal inneholde logo og navigasjon -->
         <a href="index.html" class="logo"><img src="Bilder/fav.png" alt="logo"></a> <!-- Logo med link til hovedsiden -->
@@ -36,8 +36,86 @@
         </nav>
     </header>
 
-    <main>
+    <header>
+        <section id="banner">
+            <img src="Bilder/sea-4768869_1920.jpg">
+        </section>
+        <section id="orderForm">
+            <a href="#">
+                <i class="fa-solid fa-suitcase"></i>
+                Fly + Hotell
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-plane"></i>
+                Fly
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-city"></i>
+                Storby
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-person-skiing"></i>
+                Ski
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-map-location-dot"></i>
+                Kombinasjonsreiser
+            </a>
+            <form>
+                <label for="avreise" id="avreise">Fra</label>
+                <select name="avreise" id="avreise">
+                    <option value="OSL">Oslo Lufthavn</option>
+                    <option value="TRF">Sandefjord Lufthavn Torp</option>
+                    <option value="BGO">Bergen Lufthavn Flesland</option>
+                    <option value="ALF">Alta Lufthavn</option>
+                </select> <!-- https://www.w3schools.com/tags/tag_select.asp -->
+                <label for="destinasjon" id="destinasjon">Til</label>
+                <select name="destinasjon" id="destinasjon">
+                    <option value="ALB">Albania</option>
+                    <option value="DNK">Danmark</option>
+                    <option value="FIN">Finland</option>
+                    <option value="GRC">Hellas</option>
+                </select>
+                <label for="lengde" id="lengde">Reiselengde</label>
+                <select name="lengde" id="lengde">
+                    <option value="-1">Mindre enn 1 uke</option>
+                    <option value="1">1 uke</option>
+                    <option value="2">2 uker</option>
+                    <option value="2+">Mer enn 2 uker</option>
+                </select>
+                <label for="dato" id="dato">Velg dato</label>
+                <input name="dato" type="date" min="2025-01-01">
+                <label for="antall" id="antall">Antall reisende</label>
+                <input name="antall" type="number" min="1">
+                <input type="submit" value="Søk">
+            </form>
+        </section>
+        <section id="kampanje">
+            <img src="Bilder/holiday-2733322_1280.jpg">
+            <article> <!-- Usikker på om artikkel er riktig her, usikker på semantikk generelt her-->
+                <h3>Bestill sommerens beste uke</h3> <!-- Usikker på headertype-->
+                <p>Fly + hotell, 7 dager</p>
+                <p class="pris">3298,-</p>
+            </article>
+            <a href="hotell.html"><button>Bestill i dag</button></a>
+        </section>
+    </header>
 
+    <main>
+        <section id="tilbud">
+            <article>
+                <h4>Få ekslusive tilbud</h4> <!-- Usikker på headertype-->
+                <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+            <article>
+                <h4>Billige restplasser</h4> <!-- Usikker på headertype-->
+                <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+            <article>
+                <h4>Mars - spar opp til 5000,-</h4> <!-- Usikker på headertype-->
+                <a href="#">Sikre deg et feriekupp<i class="fa-solid fa-angles-right"></i></a>
+            </article>
+        </section>
     </main>
 
     <footer id="footer">
