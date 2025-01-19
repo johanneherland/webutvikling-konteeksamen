@@ -34,7 +34,7 @@
                 <label for="enavn">Etternavn (ifølge pass):</label>
                 <input type="text" id="enavn" name="enavn" required>
                 <label for="fødselsdato">Fødselsdato:</label>
-                <input type="date" id="fødselsdato" name="fødselsdato" required>
+                <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
                 <p>Kjønn:</p>
                 <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
                 <label for="kvinne">kvinne</label>
@@ -47,7 +47,7 @@
                 <label for="adr">Gateadresse:</label>
                 <input type="text" id="adr" name="adr" required>
                 <label for="ponr">Postnummer:</label>
-                <input type="number" id="ponr" name="ponr" required>
+                <input type="number" id="ponr" name="ponr" pattern="[0-9]{4}" required> <!-- spesifisering av antall siffer fungerer ikke her, usikker på hvorfor -->
                 <label for="posted">Poststed:</label>
                 <input type="text" id="posted" name="posted" required>
                 <label for="hjemland" id="hjemland">Fra</label>
@@ -66,9 +66,9 @@
                 <label for="enavn">Etternavn (ifølge pass):</label>
                 <input type="text" id="enavn" name="enavn" required>
                 <label for="fødselsdato">Fødselsdato:</label>
-                <input type="date" id="fødselsdato" name="fødselsdato" required>
+                <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
                 <p>Kjønn:</p>
-                <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
+                <input type="radio" id="kvinne" name="kjønn" value="kvinne" required> <!-- required fungerer ikke her, usikker på hvorfor -->
                 <label for="kvinne">kvinne</label>
                 <input type="radio" id="mann" name="kjønn" value="mann">
                 <label for="mann">mann</label>
