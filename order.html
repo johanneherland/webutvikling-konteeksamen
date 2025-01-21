@@ -10,99 +10,99 @@
     <link rel="stylesheet" href="ikoner/css/brands.css"> <!-- Kobler til brands i FontAwesome -->
 </head>
 <body>
-    
-    <!--brødsmulemeny-->
-    <nav class="smulemeny">
-        <ol>
-            <li class="smule"><a href="index.html#orderForm">Søk</a></li>
-            <li class="smule"><a href="hotell.html">Søkeresultater</a></li>
-            <li class="smule"><a href="hotell.html#romvalg">Rom</a></li>
-            <li class="smule"><a href="https://www.norwegian.no/" target="_blank"">Fly</a></li>
-            <li class="smule"><a href="#">Tillegg</a></li>
-            <li class="smule"><a href="order.html">OPPLYSNINGER</a></li>
-            <li class="smule"><a href="order.html#fullfør">Bestill</a></li>
-        </ol>
-    </nav>
+    <div id="container">    
+        <!--brødsmulemeny-->
+        <nav class="smulemeny">
+            <ol>
+                <li class="smule"><a href="index.html#orderForm">Søk</a></li>
+                <li class="smule"><a href="hotell.html">Søkeresultater</a></li>
+                <li class="smule"><a href="hotell.html#romvalg">Rom</a></li>
+                <li class="smule"><a href="https://www.norwegian.no/" target="_blank"">Fly</a></li>
+                <li class="smule"><a href="#">Tillegg</a></li>
+                <li class="smule"><a href="order.html">OPPLYSNINGER</a></li>
+                <li class="smule"><a href="order.html#fullfør">Bestill</a></li>
+            </ol>
+        </nav>
 
-    <section id="bestilling">
-        <h2>Oppgi dine bestillingsopplysninger</h2>
-        <form>
-            <fieldset>
-                <legend>Voksen 18+ hovedbestiller</legend>
-                <label for="fnavn">Fornavn (ifølge pass):</label>
-                <input type="text" id="fnavn" name="fnavn" required>
-                <label for="enavn">Etternavn (ifølge pass):</label>
-                <input type="text" id="enavn" name="enavn" required>
-                <label for="fødselsdato">Fødselsdato:</label>
-                <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
-                <p>Kjønn:</p>
-                <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
-                <label for="kvinne">kvinne</label>
-                <input type="radio" id="mann" name="kjønn" value="mann">
-                <label for="mann">mann</label>
-                <label for="epost">E-postadresse:</label>
-                <input type="email" id="epost" name="epost" required>
-                <label for="tlf">Telefonnummer:</label>
-                <input type="tel" id="tlf" name="tlf" pattern="[0-9]{8}" required> <!-- https://www.w3schools.com/tags/att_input_type_tel.asp -->
-                <label for="adr">Gateadresse:</label>
-                <input type="text" id="adr" name="adr" required>
-                <label for="ponr">Postnummer:</label>
-                <input type="number" id="ponr" name="ponr" pattern="[0-9]{4}" required> <!-- spesifisering av antall siffer fungerer ikke her, usikker på hvorfor -->
-                <label for="posted">Poststed:</label>
-                <input type="text" id="posted" name="posted" required>
-                <label for="hjemland" id="hjemland">Fra</label>
-                <select id="hjemland" name="hjemland" required>
-                    <option value="DNK">Danmark</option>
-                    <option value="FIN">Finland</option>
-                    <option value="NLD">Nederland</option>
-                    <option value="NOR">Norge</option>
-                    <option value="SWE">Sverige</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <legend>Voksen 18+</legend>
-                <label for="fnavn">Fornavn (ifølge pass):</label>
-                <input type="text" id="fnavn" name="fnavn" required>
-                <label for="enavn">Etternavn (ifølge pass):</label>
-                <input type="text" id="enavn" name="enavn" required>
-                <label for="fødselsdato">Fødselsdato:</label>
-                <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
-                <p>Kjønn:</p>
-                <input type="radio" id="kvinne" name="kjønn" value="kvinne" required> <!-- required fungerer ikke her, usikker på hvorfor -->
-                <label for="kvinne">kvinne</label>
-                <input type="radio" id="mann" name="kjønn" value="mann">
-                <label for="mann">mann</label>
-            </fieldset>
-            <button id="fullfør"><input type="submit" value="Fullfør bestilling"></button>
-        </form>
-    </section>
+        <section id="bestilling">
+            <h2>Oppgi dine bestillingsopplysninger</h2>
+            <form>
+                <fieldset>
+                    <legend>Voksen 18+ hovedbestiller</legend>
+                    <label for="fnavn">Fornavn (ifølge pass):</label>
+                    <input type="text" id="fnavn" name="fnavn" required>
+                    <label for="enavn">Etternavn (ifølge pass):</label>
+                    <input type="text" id="enavn" name="enavn" required>
+                    <label for="fødselsdato">Fødselsdato:</label>
+                    <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
+                    <p>Kjønn:</p>
+                    <input type="radio" id="kvinne" name="kjønn" value="kvinne" required>
+                    <label for="kvinne">kvinne</label>
+                    <input type="radio" id="mann" name="kjønn" value="mann">
+                    <label for="mann">mann</label>
+                    <label for="epost">E-postadresse:</label>
+                    <input type="email" id="epost" name="epost" required>
+                    <label for="tlf">Telefonnummer:</label>
+                    <input type="tel" id="tlf" name="tlf" pattern="[0-9]{8}" required> <!-- https://www.w3schools.com/tags/att_input_type_tel.asp -->
+                    <label for="adr">Gateadresse:</label>
+                    <input type="text" id="adr" name="adr" required>
+                    <label for="ponr">Postnummer:</label>
+                    <input type="number" id="ponr" name="ponr" pattern="[0-9]{4}" required> <!-- spesifisering av antall siffer fungerer ikke her, usikker på hvorfor -->
+                    <label for="posted">Poststed:</label>
+                    <input type="text" id="posted" name="posted" required>
+                    <label for="hjemland" id="hjemland">Fra</label>
+                    <select id="hjemland" name="hjemland" required>
+                        <option value="DNK">Danmark</option>
+                        <option value="FIN">Finland</option>
+                        <option value="NLD">Nederland</option>
+                        <option value="NOR">Norge</option>
+                        <option value="SWE">Sverige</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Voksen 18+</legend>
+                    <label for="fnavn">Fornavn (ifølge pass):</label>
+                    <input type="text" id="fnavn" name="fnavn" required>
+                    <label for="enavn">Etternavn (ifølge pass):</label>
+                    <input type="text" id="enavn" name="enavn" required>
+                    <label for="fødselsdato">Fødselsdato:</label>
+                    <input type="date" id="fødselsdato" name="fødselsdato" max="2007-01-31" required>
+                    <p>Kjønn:</p>
+                    <input type="radio" id="kvinne" name="kjønn" value="kvinne" required> <!-- required fungerer ikke her, usikker på hvorfor -->
+                    <label for="kvinne">kvinne</label>
+                    <input type="radio" id="mann" name="kjønn" value="mann">
+                    <label for="mann">mann</label>
+                </fieldset>
+                <button id="fullfør"><input type="submit" value="Fullfør bestilling"></button>
+            </form>
+        </section>
 
-    <section>
-        <details>
-            <summary>Dine valg</summary>
-            <img src="Bilder/landscape-2016308_640.jpg">
-            <h2>Lorem Ipsum</h2>
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-solid fa-sun"></i>
-            <i class="fa-regular fa-sun"></i>
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Hellas, Parga</p>
-            <i class="fa-regular fa-calendar"></i>
-            <p>Man 5 mai - man 12 mai 2025</p>
-            <i class="fa-regular fa-user"></i>
-            <p>2 Voksne</p>
-            <i class="fa-solid fa-bed"></i>
-            <p>Deluxerom, Balkong og ikke spesifisert utsikt</p>
-            <i class="fa-solid fa-utensils"></i>
-            <p>Frokostbuffé</p>
-            <i class="fa-solid fa-plane-departure"></i>
-            <p>Oslo Lufthavn - Preveza</p>
-            <del>22 003,-</del>
-            <ins>19 803,-</ins>
-        </details>
-    </section>
-
+        <section>
+            <details>
+                <summary>Dine valg</summary>
+                <img src="Bilder/landscape-2016308_640.jpg">
+                <h2>Lorem Ipsum</h2>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Hellas, Parga</p>
+                <i class="fa-regular fa-calendar"></i>
+                <p>Man 5 mai - man 12 mai 2025</p>
+                <i class="fa-regular fa-user"></i>
+                <p>2 Voksne</p>
+                <i class="fa-solid fa-bed"></i>
+                <p>Deluxerom, Balkong og ikke spesifisert utsikt</p>
+                <i class="fa-solid fa-utensils"></i>
+                <p>Frokostbuffé</p>
+                <i class="fa-solid fa-plane-departure"></i>
+                <p>Oslo Lufthavn - Preveza</p>
+                <del>22 003,-</del>
+                <ins>19 803,-</ins>
+            </details>
+        </section>
+    </div>
 </body>
 </html>

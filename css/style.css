@@ -1,0 +1,92 @@
+/* Mobil-first approach*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: calc(1rem + 1vw); /* responsiv typografi - skriftstørrelse justeres ettersom viewfinder endrer seg */
+}
+
+body {
+    background-color: white; 
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#container {
+    max-width: 1400px;
+    display: grid;  /* oppretter CSS Grid */
+    grid-template-columns: 1 fr; /* kun en kolonne for mobil hvor alt innhold skal vises under hverandre */
+    grid-template-rows: repeat(3, auto); /* tre rader for header, main og footer */
+}
+  
+header {
+    width: 100%;
+    display: grid;
+}
+
+#navigasjon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#banner {
+    max-width: 100%;
+}
+
+#orderForm {
+    max-width: 1000px;
+}
+
+#tilbud {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 like kolonner */
+    gap: 1.5em; /* Luft mellom artikkelkortene */
+    justify-items: center; /* sentrerer artikkelkort horisontalt */
+    overflow-x: scroll;
+}
+
+button {
+    color: #027792;
+    border-color: #027792;
+}
+
+.current {
+    text-decoration: underline;
+    text-decoration-color: #1ca2c1;
+}
+
+main {
+    max-width: 1000px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #252525;
+    display: grid; 
+    grid-template-rows: auto 1fr;
+    gap: 1.5em;
+}
+
+
+/*
+Oversikt over fargekoder til senere:
+Lyseblå #52d3f0
+Litt mørkere blå #1ca2c1
+Gul #ffcf40
+Sort-ish #252525
+Lys grå #e8e8e8
+Grønn #019101
+Hvit-lysere grå #f6f5f2
+*/
+
+@media only screen and (min-width: 680px) {
+
+}
