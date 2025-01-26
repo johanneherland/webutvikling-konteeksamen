@@ -100,10 +100,23 @@ a {
     color: black;
 }
 
+#tilbud {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* 3 like kolonner */
+    gap: 1.5em; /* Luft mellom artikkelkortene */
+    justify-items: center; /* sentrerer artikkelkort horisontalt */
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 20px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
 .galleri {
     width: 100%;
-    max-width: 600px;
-    height: 400px;
+    max-width: 1000px;
+    height: auto;
     margin: 20px;
     overflow: hidden;
     position: relative;
@@ -194,4 +207,20 @@ footer {
     }
     display: grid;
     grid-template-rows: auto auto;
+    gap: 1rem;
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .flagg ul {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (min-width: 680px) {
+
 }
