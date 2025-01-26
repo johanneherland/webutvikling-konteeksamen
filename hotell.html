@@ -11,97 +11,156 @@
 </head>
 <body>
     <div id="container">
-        <header></header> <!-- Global header -->
+        <!-- Global header med navigasjon, logo og linker -->
+        <header class="globalHead">
+            <!-- Toppområde del 1 skal inneholde søke-ikon (linker til bestillingssiden), bruker-ikon (linker til «Min side») -->
+            <a href="order.html"><i class="fa-regular fa-magnifying-glass" aria-label="søke-ikon"></i></a>
+            <details id="brukerInfo">
+                <summary><i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i></summary>
+                <a href="#">
+                    <button type="button">
+                    Opprett en konto
+                    </button>
+                </a>
+                <a href="#">
+                    <button type="button">
+                        <i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i>
+                        Min side
+                    </button>
+                </a>
+            </details>
+            <!-- Toppområde del 2 skal inneholde logo og navigasjon -->
+            <a href="index.html" class="logo"><img src="Bilder/fav.png" alt="logo som viser et fly over en sol"></a> <!-- Logo med link til hovedsiden -->
+            <details id="globalNav">
+                <summary aria-label="meny-ikon"><i class="fa-solid fa-bars"></i></summary>
+                <nav>
+                    <a href="index.html#tips">Tips og inspirasjon</a> <!-- Link til Tips og inspirasjon på forsiden -->
+                    <a href="hotell.html">Hotell</a> <!-- Link til hotell.html -->
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a> <!-- Link til Norwegian som åpnes i ny fane -->
+                    <a href="#footer">Kontakt</a> <!-- Link til footer på den aktuelle siden -->
+                </nav>
+            </details>
+        </header>
 
-        <header>
-            <img src="Bilder/landscape-2016308_640.jpg">
-            <img src="Bilder/beach-6514331_640.jpg">
-            <img src="Bilder/holiday-2733322_1280.jpg">
-            <img src="Bilder/beach-1836467_640.jpg">
-            <img src="Bilder/sea-4768869_1920.jpg">
-            <img src="Bilder/beach-666122_640.jpg">
-            <button><i class="fa-regular fa-angle-left"></i></button>
-            <button><i class="fa-regular fa-angle-right"></i></button>
-            <button><i class="fa-regular fa-images"></i>6</button>
-            <button><i class="fa-regular fa-heart"></i></button>
-            <nav>
-                <a href="#">Oversikt</a>
-                <a href="#">Fasiliteter</a>
-                <a href="#">Rom</a>
-            </nav>
+        <header id="hotelHead">
+            <section class="galleri" aria-label="bildegalleri">
+                <article id="slide1" class="slide">
+                    <img id="slide1" class="slide" src="Bilder/landscape-2016308_640.jpg" alt="utsikt over et basseng med hvite solstoler rundt og blå himmel i bakgrunnen">
+                    <a class="forrige" href="#slide6"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide2"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <article id="slide2" class="slide">
+                    <img id="slide2" class="slide" src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
+                    <a class="forrige" href="#slide1"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide3"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <article id="slide3" class="slide">
+                    <img id="slide3" class="slide" src="Bilder/holiday-2733322_1280.jpg" alt="Kvinne som lener seg på en bassengkant med utsikt til bungalows på vannet">
+                    <a class="forrige" href="#slide2"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide4"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <article id="slide4" class="slide">
+                    <img id="slide4" class="slide" src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
+                    <a class="forrige" href="#slide3"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide5"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <article id="slide5" class="slide">
+                    <img id="slide5" class="slide" src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
+                    <a class="forrige" href="#slide4"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide6"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <article id="slide6" class="slide">
+                    <img id="slide6" class="slide" src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
+                    <a class="forrige" href="#slide5"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
+                    <a class="neste" href="#slide1"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
+                </article>
+                <i class="fa-regular fa-images" aria-label="bilde-ikon"></i>
+                <i class="fa-regular fa-heart" aria-label="favoritt-ikon"></i>
+            </section>
+            <section>
+                <nav>
+                    <a href="#">Oversikt</a>
+                    <a href="#">Fasiliteter</a>
+                    <a href="#">Rom</a>
+                </nav>
+            </section>
         </header>
         
         <main>
             <section id="oversikt">
                 <h2>Lorem Ipsum</h2>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-regular fa-sun"></i>
-                <button>8.9</button>
+                <i class="fa-solid fa-sun" aria-label="fylt sol-ikon"></i>
+                <i class="fa-solid fa-sun" aria-label="fylt sol-ikon"></i>
+                <i class="fa-solid fa-sun" aria-label="fylt sol-ikon"></i>
+                <i class="fa-solid fa-sun" aria-label="fylt sol-ikon"></i>
+                <i class="fa-regular fa-sun" aria-label="tomt sol-ikon"></i>
+                <p class="score">8.9</p>
                 <p>Fantastisk</p>
-                <a href="#">Se alle anmeldelsene</a>
+                <a href="#">Se alle anmeldelsene<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
             </section>
 
             <section id="fasiliteter">
                 <h2>Fasiliteter</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                <p><i class="fa-solid fa-paw"></i>Kjæledyr-vennlig</p>
-                <p><i class="fa-solid fa-mug-hot"></i>Frokost</p>
-                <p><i class="fa-solid fa-spa"></i>Spa</p>
-                <p><i class="fa-solid fa-bell-concierge"></i>Romservice</p>
-                <p><i class="fa-solid fa-martini-glass"></i>Bar</p>
-                <p><i class="fa-solid fa-dumbbell"></i>Treningssenter</p>
+                <p><i class="fa-solid fa-paw" aria-label="kjæledyr-ikon"></i>Kjæledyr-vennlig</p>
+                <p><i class="fa-solid fa-mug-hot" aria-label="frokost-ikon"></i>Frokost</p>
+                <p><i class="fa-solid fa-spa" aria-label="spa-ikon"></i>Spa</p>
+                <p><i class="fa-solid fa-bell-concierge" aria-label="romservice-ikon"></i>Romservice</p>
+                <p><i class="fa-solid fa-martini-glass" aria-label="drink-ikon"></i>Bar</p>
+                <p><i class="fa-solid fa-dumbbell" aria-label="trening-ikon"></i>Treningssenter</p>
             </section>
 
             <section id="kart">
                 <h2>Utforsk området</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2397.85136256686!2d20.389288205977373!3d39.28487431647553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1737303179982!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2397.85136256686!2d20.389288205977373!3d39.28487431647553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1737303179982!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="kart over området"></iframe>
             </section>
             
             <section id="romvalg">
                 <h2>Velg rom</h2>
                 <article>
-                    <img src="Bilder/beach-6514331_640.jpg">
+                    <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
-                    <button>8.9</button> <strong>59 anmeldelser</strong>
-                    <p id="pris">6 789 kr</p>
+                    <p class="score">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
                 <article>
-                    <img src="Bilder/beach-6514331_640.jpg">
+                    <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
-                    <button>8.9</button> <strong>59 anmeldelser</strong>
-                    <p id="pris">6 789 kr</p>
+                    <p class="score">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
                 <article>
-                    <img src="Bilder/beach-6514331_640.jpg">
+                    <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
-                    <button>8.9</button> <strong>59 anmeldelser</strong>
-                    <p id="pris">6 789 kr</p>
+                    <p class="score">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
                 <article>
-                    <img src="Bilder/beach-6514331_640.jpg">
+                    <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
-                    <button>8.9</button> <strong>59 anmeldelser</strong>
-                    <p id="pris">6 789 kr</p>
+                    <p class="score">8.9</p>
+                    <p>59 anmeldelser</p>
+                    <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
@@ -109,7 +168,106 @@
             </section>
         </main>
         
-        <footer></footer> <!-- Global footer -->
+        <footer id="footer">
+            <section id="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
+                <img src="Flagg/sweden.png" alt="svensk flagg">
+                <p>Sverige</p>
+                <img src="Flagg/denmark.png" alt="dansk flagg">
+                <p>Danmark</p>
+                <img src="Flagg/norway.png" alt="norsk flagg">
+                <p>Norge</p>
+                <img src="Flagg/finland.png" alt="finsk flagg">
+                <p>Suomi</p>
+                <img src="Flagg/netherlands.png" alt="nederlandsk flagg">
+                <p>Nederland</p>
+            </section>
+            <section id="betaling">
+                <h3>BETALINGSMETODER</h3>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-cc-visa" aria-label="Visa-ikon"></i> 
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-mastercard" aria-label="MasterCard-ikon"></i> 
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-paypal" aria-label="PayPal-ikon"></i> 
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-apple-pay" aria-label="Apple-pay-ikon"></i> 
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-cc-amazon-pay" aria-label="Amazon-pay-ikon"></i> 
+                    </li>
+                </ul>
+            </section>
+            <section id="nyheter">
+                <h3>NYHETER & TILBUD</h3>
+                <section>
+                    <form>
+                        <label for="email">Med deg på nyhetsbrev her</label>
+                        <fieldset>
+                            <input type="email" id="email" name="email">
+                            <!-- Valgte å bruke input type email, W3 Schools forklarer at "The input value is automatically validated to ensure it is a properly formatted e-mail address." -->
+                            <input type="submit" value="Send" class="btn">
+                        </fieldset>
+                    </form>
+                </section>
+                <a href="#">Kjøp reisegavekort</a>
+            </section>
+            <section id="service">
+                <h3>KUNDESERVICE</h3>
+                <ul>
+                    <li>
+                        <a href="#">Spørsmål og svar</a>
+                    </li>
+                    <li>
+                        <a href="#">Chat</a>
+                    </li>
+                    <li>
+                        <a href="#">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#">Tilgjengelighetserklæring</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="some">
+                <h3>SOSIALE MEDIER</h3>
+                <ul> 
+                    <!-- Instagram-ikon med link som åpnes i ny fane -->
+                    <li>
+                        <a href="instagram.com" target="_blank">
+                            <i class="fa-brands fa-instagram" aria-label="Besøk vår Instagram"></i> 
+                        </a>
+                    </li>
+                    <!-- Facebook-ikon med link som åpnes i ny fane -->
+                    <li>
+                        <a href="facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f" aria-label="Besøk vår Facebook"></i>
+                        </a>
+                    </li>
+                    <!-- Pinterest-ikon med link som åpnes i ny fane -->
+                    <li>
+                        <a href="pinterest.com" target="_blank">
+                            <i class="fa-brands fa-pinterest-p" aria-label="Besøk vår Pinterest"></i>
+                        </a>
+                    </li> 
+                    <!-- TikTok-ikon med link som åpnes i ny fane -->
+                    <li>
+                        <a href="tiktok.com" target="_blank">
+                            <i class="fa-brands fa-tiktok" aria-label="Besøk vår TikTok"></i>
+                        </a>
+                    </li> 
+                    <!-- Youtube-ikon med link som åpnes i ny fane -->
+                    <li>
+                        <a href="youtube.com" target="_blank">
+                            <i class="fa-brands fa-youtube" aria-label="Besøk vår Youtube"></i>
+                        </a>
+                    </li> 
+                </ul>
+            </section>
+        </footer>
     </div>
 </body>
 </html>

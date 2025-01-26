@@ -12,11 +12,11 @@
 <body>
     <div id="container"> 
         <!-- Global header med navigasjon, logo og linker -->
-        <header id="globalHead">
+        <header class="globalHead">
             <!-- Toppområde del 1 skal inneholde søke-ikon (linker til bestillingssiden), bruker-ikon (linker til «Min side») -->
-            <a href="order.html"><i class="fa-regular fa-magnifying-glass"></i></a>
-            <details>
-                <summary><i class="fa-regular fa-circle-user"></i></summary>
+            <a href="order.html" class="søk"><i class="fa-regular fa-magnifying-glass" aria-label="søke-ikon"></i></a>
+            <details class="bruker">
+                <summary><i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i></summary>
                 <a href="#">
                     <button type="button">
                     Opprett en konto
@@ -24,15 +24,15 @@
                 </a>
                 <a href="#">
                     <button type="button">
-                        <i class="fa-regular fa-circle-user"></i>
+                        <i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i>
                         Min side
                     </button>
                 </a>
             </details>
             <!-- Toppområde del 2 skal inneholde logo og navigasjon -->
-            <a href="index.html" class="logo"><img src="Bilder/fav.png" alt="logo"></a> <!-- Logo med link til hovedsiden -->
-            <details id="navigasjon">
-                <summary><i class="fa-solid fa-bars"></i></summary>
+            <a href="index.html" class="logo"><img src="Bilder/fav.png" alt="logo som viser et fly over en sol"></a> <!-- Logo med link til hovedsiden -->
+            <details class="globalNav">
+                <summary aria-label="meny-ikon"><i class="fa-solid fa-bars"></i></summary>
                 <nav>
                     <a href="index.html#tips">Tips og inspirasjon</a> <!-- Link til Tips og inspirasjon på forsiden -->
                     <a href="hotell.html">Hotell</a> <!-- Link til hotell.html -->
@@ -44,27 +44,27 @@
 
         <header id="frontHead">
             <section id="banner">
-                <img src="Bilder/sea-4768869_1920.jpg">
+                <img src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
             </section>
             <section id="orderForm">
-                <a href="#" class="current">
+                <a href="#" class="current" aria-label="koffert-ikon">
                     <i class="fa-solid fa-suitcase"></i>
                     Fly + Hotell
                 </a>
                 <a href="#">
-                    <i class="fa-solid fa-plane"></i>
+                    <i class="fa-solid fa-plane" aria-label="fly-ikon"></i>
                     Fly
                 </a>
                 <a href="#">
-                    <i class="fa-solid fa-city"></i>
+                    <i class="fa-solid fa-city" aria-label="by-ikon"></i>
                     Storby
                 </a>
                 <a href="#">
-                    <i class="fa-solid fa-person-skiing"></i>
+                    <i class="fa-solid fa-person-skiing" aria-label="ski-ikon"></i>
                     Ski
                 </a>
                 <a href="#">
-                    <i class="fa-solid fa-map-location-dot"></i>
+                    <i class="fa-solid fa-map-location-dot" aria-label="kart-ikon"></i>
                     Kombinasjonsreiser
                 </a>
                 <form>
@@ -90,20 +90,20 @@
                         <option value="2+">Mer enn 2 uker</option>
                     </select>
                     <label for="dato" id="dato">Velg dato</label>
-                    <input name="dato" type="date" min="2025-01-31" required>
+                    <input name="dato" id="dato" type="date" min="2025-01-31" required>
                     <label for="antall" id="antall">Antall reisende</label>
-                    <input name="antall" type="number" min="1" required>
+                    <input name="antall" id="antall" type="number" min="1" required>
                     <input type="submit" value="Søk">
                 </form>
             </section>
             <section id="kampanje">
-                <img src="Bilder/holiday-2733322_1280.jpg">
+                <img src="Bilder/holiday-2733322_1280.jpg" alt="Kvinne som lener seg på en bassengkant med utsikt til bungalows på vannet">
                 <article> <!-- Usikker på om artikkel er riktig her, usikker på semantikk generelt her-->
                     <h3>Bestill sommerens beste uke</h3> <!-- Usikker på headertype-->
                     <p>Fly + hotell, 7 dager</p>
                     <p class="pris">3298,-</p>
                 </article>
-                <a href="hotell.html"><button>Bestill i dag</button></a>
+                <a href="hotell.html"><button class="btn">Bestill i dag</button></a>
             </section>
         </header>
 
@@ -123,43 +123,43 @@
                 </article>
             </section>
 
-            <section>
+            <section id="inspo">
                 <h2>Tips og inspirasjon</h2>
                 <article>
-                    <img src="Bilder/beach-6514331_640.jpg">
+                    <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Greske favoritter</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 3970<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Fra kr 3970<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
-                    <img src="Bilder/beach-1836467_640.jpg">
+                    <img src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
                     <h3>Solskinnspriser - bestill i dag!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 3203<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Fra kr 3203<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
-                    <img src="Bilder/cathedral-427997_640.jpg">
+                    <img src="Bilder/cathedral-427997_640.jpg" alt="utsikt over Barcelona med La Sagrada Família i senter">
                     <h3>Storbyferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Les mer<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
-                    <img src="Bilder/building-7014904_640.jpg">
+                    <img src="Bilder/building-7014904_640.jpg" alt="sideperspektiv av Tower Bridge i London">
                     <h3>Besøk påskefavoritten London</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 2150<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Fra kr 2150<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
-                    <img src="Bilder/ski-slope-3223709_640.jpg">
+                    <img src="Bilder/ski-slope-3223709_640.jpg" alt="en person som står på ski i bakke og en skiheis med to gondoler i bakgrunnen">
                     <h3>Skiferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
-                    <img src="Bilder/beach-666122_640.jpg">
+                    <img src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
                     <h3>Spar opptil 7000,- i sommer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Les mer<i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#">Les mer<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
             </section>
 
@@ -167,15 +167,15 @@
 
         <footer id="footer">
             <section id="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
-                <img src="Flagg/sweden.png">
+                <img src="Flagg/sweden.png" alt="svensk flagg">
                 <p>Sverige</p>
-                <img src="Flagg/denmark.png">
+                <img src="Flagg/denmark.png" alt="dansk flagg">
                 <p>Danmark</p>
-                <img src="Flagg/norway.png">
+                <img src="Flagg/norway.png" alt="norsk flagg">
                 <p>Norge</p>
-                <img src="Flagg/finland.png">
+                <img src="Flagg/finland.png" alt="finsk flagg">
                 <p>Suomi</p>
-                <img src="Flagg/netherlands.png">
+                <img src="Flagg/netherlands.png" alt="nederlandsk flagg">
                 <p>Nederland</p>
             </section>
             <section id="betaling">
@@ -206,7 +206,7 @@
                         <fieldset>
                             <input type="email" id="email" name="email">
                             <!-- Valgte å bruke input type email, W3 Schools forklarer at "The input value is automatically validated to ensure it is a properly formatted e-mail address." -->
-                            <button><input type="submit" value="Send"></button>
+                            <input type="submit" value="Send" class="btn">
                         </fieldset>
                     </form>
                 </section>
@@ -235,31 +235,31 @@
                     <!-- Instagram-ikon med link som åpnes i ny fane -->
                     <li>
                         <a href="instagram.com" target="_blank">
-                            <i class="fa-brands fa-instagram" aria-label="Instagram-ikon"></i> 
+                            <i class="fa-brands fa-instagram" aria-label="Besøk vår Instagram"></i> 
                         </a>
                     </li>
                     <!-- Facebook-ikon med link som åpnes i ny fane -->
                     <li>
                         <a href="facebook.com" target="_blank">
-                            <i class="fa-brands fa-facebook-f" aria-label="Facebook-ikon"></i>
+                            <i class="fa-brands fa-facebook-f" aria-label="Besøk vår Facebook"></i>
                         </a>
                     </li>
                     <!-- Pinterest-ikon med link som åpnes i ny fane -->
                     <li>
                         <a href="pinterest.com" target="_blank">
-                            <i class="fa-brands fa-pinterest-p" aria-label="Pinterest-ikon"></i>
+                            <i class="fa-brands fa-pinterest-p" aria-label="Besøk vår Pinterest"></i>
                         </a>
                     </li> 
                     <!-- TikTok-ikon med link som åpnes i ny fane -->
                     <li>
                         <a href="tiktok.com" target="_blank">
-                            <i class="fa-brands fa-tiktok" aria-label="TikTok-ikon"></i>
+                            <i class="fa-brands fa-tiktok" aria-label="Besøk vår TikTok"></i>
                         </a>
                     </li> 
                     <!-- Youtube-ikon med link som åpnes i ny fane -->
                     <li>
                         <a href="youtube.com" target="_blank">
-                            <i class="fa-brands fa-youtube" aria-label="Youtube-ikon"></i>
+                            <i class="fa-brands fa-youtube" aria-label="Besøk vår Youtube"></i>
                         </a>
                     </li> 
                 </ul>
