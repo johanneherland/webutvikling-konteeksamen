@@ -47,26 +47,28 @@
                 <img src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
             </section>
             <section id="orderForm">
-                <a href="#" class="current" aria-label="koffert-ikon">
-                    <i class="fa-solid fa-suitcase"></i>
-                    Fly + Hotell
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-plane" aria-label="fly-ikon"></i>
-                    Fly
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-city" aria-label="by-ikon"></i>
-                    Storby
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-person-skiing" aria-label="ski-ikon"></i>
-                    Ski
-                </a>
-                <a href="#">
-                    <i class="fa-solid fa-map-location-dot" aria-label="kart-ikon"></i>
-                    Kombinasjonsreiser
-                </a>
+                <nav id="orderNav">
+                    <a href="#" class="current" aria-label="koffert-ikon">
+                        <i class="fa-solid fa-suitcase"></i>
+                        Fly + Hotell
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-plane" aria-label="fly-ikon"></i>
+                        Fly
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-city" aria-label="by-ikon"></i>
+                        Storby
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-person-skiing" aria-label="ski-ikon"></i>
+                        Ski
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-map-location-dot" aria-label="kart-ikon"></i>
+                        Kombinasjonsreiser
+                    </a>
+                </nav>
                 <form>
                     <label for="avreise" id="avreise">Fra</label>
                     <select name="avreise" id="avreise" required>
@@ -93,7 +95,7 @@
                     <input name="dato" id="dato" type="date" min="2025-01-31" required>
                     <label for="antall" id="antall">Antall reisende</label>
                     <input name="antall" id="antall" type="number" min="1" required>
-                    <input type="submit" value="Søk">
+                    <input class="btn" type="submit" value="Søk">
                 </form>
             </section>
             <section id="kampanje">
@@ -109,7 +111,7 @@
 
         <main>
             <section id="tilbud">
-                <article class="tilbud">
+                <article>
                     <h3>Få ekslusive tilbud</h3> <!-- Usikker på headertype-->
                     <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
                 </article>
@@ -129,37 +131,37 @@
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Greske favoritter</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 3970<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Fra kr 3970 <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
                     <img src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
                     <h3>Solskinnspriser - bestill i dag!</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 3203<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Fra kr 3203 <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
                     <img src="Bilder/cathedral-427997_640.jpg" alt="utsikt over Barcelona med La Sagrada Família i senter">
                     <h3>Storbyferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Les mer<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Les mer <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
                     <img src="Bilder/building-7014904_640.jpg" alt="sideperspektiv av Tower Bridge i London">
                     <h3>Besøk påskefavoritten London</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 2150<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Fra kr 2150 <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
                     <img src="Bilder/ski-slope-3223709_640.jpg" alt="en person som står på ski i bakke og en skiheis med to gondoler i bakgrunnen">
                     <h3>Skiferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Se alle skistedene<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Se alle skistedene <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
                 <article>
                     <img src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
                     <h3>Spar opptil 7000,- i sommer</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Les mer<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Les mer <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
             </section>
 
