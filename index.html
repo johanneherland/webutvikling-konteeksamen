@@ -17,16 +17,10 @@
             <a href="order.html" class="søk"><i class="fa-regular fa-magnifying-glass" aria-label="søke-ikon"></i></a>
             <details class="bruker">
                 <summary><i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i></summary>
+                <a href="#">Opprett en konto</a>
                 <a href="#">
-                    <button type="button">
-                    Opprett en konto
-                    </button>
-                </a>
-                <a href="#">
-                    <button type="button">
-                        <i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i>
-                        Min side
-                    </button>
+                    <i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i>
+                    Min side
                 </a>
             </details>
             <!-- Toppområde del 2 skal inneholde logo og navigasjon -->
@@ -42,12 +36,12 @@
             </details>
         </header>
 
-        <header id="frontHead">
-            <section id="banner">
+        <header class="frontHead">
+            <section class="banner">
                 <img src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
             </section>
-            <section id="orderForm">
-                <nav id="orderNav">
+            <section class="orderForm">
+                <nav class="orderNav">
                     <a href="#" class="current" aria-label="koffert-ikon">
                         <i class="fa-solid fa-suitcase"></i>
                         Fly + Hotell
@@ -70,31 +64,41 @@
                     </a>
                 </nav>
                 <form>
-                    <label for="avreise" id="avreise">Fra</label>
-                    <select name="avreise" id="avreise" required>
-                        <option value="OSL">Oslo Lufthavn</option>
-                        <option value="TRF">Sandefjord Lufthavn Torp</option>
-                        <option value="BGO">Bergen Lufthavn Flesland</option>
-                        <option value="ALF">Alta Lufthavn</option>
-                    </select> <!-- https://www.w3schools.com/tags/tag_select.asp -->
-                    <label for="destinasjon" id="destinasjon">Til</label>
-                    <select name="destinasjon" id="destinasjon" required>
-                        <option value="ALB">Albania</option>
-                        <option value="DNK">Danmark</option>
-                        <option value="FIN">Finland</option>
-                        <option value="GRC">Hellas</option>
-                    </select>
-                    <label for="lengde" id="lengde">Reiselengde</label>
-                    <select name="lengde" id="lengde" required>
-                        <option value="-1">Mindre enn 1 uke</option>
-                        <option value="1">1 uke</option>
-                        <option value="2">2 uker</option>
-                        <option value="2+">Mer enn 2 uker</option>
-                    </select>
-                    <label for="dato" id="dato">Velg dato</label>
-                    <input name="dato" id="dato" type="date" min="2025-01-31" required>
-                    <label for="antall" id="antall">Antall reisende</label>
-                    <input name="antall" id="antall" type="number" min="1" required>
+                    <fieldset>
+                        <legend for="avreise" id="avreise">Fra</legend>
+                        <select name="avreise" id="avreise" required>
+                            <option value="OSL">Oslo Lufthavn</option>
+                            <option value="TRF">Sandefjord Lufthavn Torp</option>
+                            <option value="BGO">Bergen Lufthavn Flesland</option>
+                            <option value="ALF">Alta Lufthavn</option>
+                        </select> <!-- https://www.w3schools.com/tags/tag_select.asp -->
+                    </fieldset>
+                    <fieldset>    
+                        <legend for="destinasjon" id="destinasjon">Til</legend>
+                        <select name="destinasjon" id="destinasjon" required>
+                            <option value="ALB">Albania</option>
+                            <option value="DNK">Danmark</option>
+                            <option value="FIN">Finland</option>
+                            <option value="GRC">Hellas</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend for="lengde" id="lengde">Reiselengde</legend>
+                        <select name="lengde" id="lengde" required>
+                            <option value="-1">Mindre enn 1 uke</option>
+                            <option value="1">1 uke</option>
+                            <option value="2">2 uker</option>
+                            <option value="2+">Mer enn 2 uker</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend for="dato" id="dato">Velg dato</legend>
+                        <input name="dato" id="dato" type="date" min="2025-01-31" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend for="antall" id="antall">Antall reisende</legend>
+                        <input name="antall" id="antall" type="number" min="1" required>
+                    </fieldset>
                     <input class="btn" type="submit" value="Søk">
                 </form>
             </section>
@@ -104,8 +108,8 @@
                     <h3>Bestill sommerens beste uke</h3> <!-- Usikker på headertype-->
                     <p>Fly + hotell, 7 dager</p>
                     <p class="pris">3298,-</p>
+                    <a href="hotell.html"><button class="btn">Bestill i dag</button></a>
                 </article>
-                <a href="hotell.html"><button class="btn">Bestill i dag</button></a>
             </section>
         </header>
 
@@ -127,11 +131,14 @@
 
             <section id="inspo">
                 <h2>Tips og inspirasjon</h2>
-                <article>
+                <article id="deal">
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Greske favoritter</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                    <a href="#">Fra kr 3970 <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <a href="#">Fra kr 3970
+                        <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i>
+                    </a>
+                    <p class="tag">Ukens Deal</p>
                 </article>
                 <article>
                     <img src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
@@ -151,11 +158,12 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
                     <a href="#">Fra kr 2150 <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
                 </article>
-                <article>
+                <article id="ny">
                     <img src="Bilder/ski-slope-3223709_640.jpg" alt="en person som står på ski i bakke og en skiheis med to gondoler i bakgrunnen">
                     <h3>Skiferie</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
                     <a href="#">Se alle skistedene <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                    <p class="tag">Nyhet</p>
                 </article>
                 <article>
                     <img src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
@@ -167,20 +175,30 @@
 
         </main>
 
-        <footer id="footer">
-            <section id="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
-                <img src="Flagg/sweden.png" alt="svensk flagg">
-                <p>Sverige</p>
-                <img src="Flagg/denmark.png" alt="dansk flagg">
-                <p>Danmark</p>
-                <img src="Flagg/norway.png" alt="norsk flagg">
-                <p>Norge</p>
-                <img src="Flagg/finland.png" alt="finsk flagg">
-                <p>Suomi</p>
-                <img src="Flagg/netherlands.png" alt="nederlandsk flagg">
-                <p>Nederland</p>
+        <footer class="footer">
+            <section class="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
+                <figure>
+                    <img src="Flagg/sweden.png" alt="svensk flagg">
+                    <figcaption>Sverige</figcaption>
+                </figure>
+                <figure>
+                    <img src="Flagg/denmark.png" alt="dansk flagg">
+                    <figcaption>Danmark</figcaption>
+                </figure>
+                <figure>
+                    <img src="Flagg/norway.png" alt="norsk flagg">
+                    <figcaption>Norge</figcaption>
+                </figure>
+                <figure>
+                    <img src="Flagg/finland.png" alt="finsk flagg">
+                    <figcaption>Suomi</figcaption>
+                </figure>
+                <figure>
+                    <img src="Flagg/netherlands.png" alt="nederlandsk flagg">
+                    <figcaption>Nederland</figcaption>
+                </figure>
             </section>
-            <section id="betaling">
+            <section class="betaling">
                 <h3>BETALINGSMETODER</h3>
                 <ul>
                     <li>
@@ -200,13 +218,13 @@
                     </li>
                 </ul>
             </section>
-            <section id="nyheter">
+            <section class="nyheter">
                 <h3>NYHETER & TILBUD</h3>
                 <section>
                     <form>
-                        <label for="email">Med deg på nyhetsbrev her</label>
                         <fieldset>
-                            <input type="email" id="email" name="email">
+                            <legend for="email">Med deg på nyhetsbrev her</legend>
+                            <input type="email" id="email" name="email" placeholder="epost@eksempel.com">
                             <!-- Valgte å bruke input type email, W3 Schools forklarer at "The input value is automatically validated to ensure it is a properly formatted e-mail address." -->
                             <input type="submit" value="Send" class="btn">
                         </fieldset>
@@ -214,7 +232,7 @@
                 </section>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
-            <section id="service">
+            <section class="service">
                 <h3>KUNDESERVICE</h3>
                 <ul>
                     <li>
@@ -231,7 +249,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="some">
+            <section class="some">
                 <h3>SOSIALE MEDIER</h3>
                 <ul> 
                     <!-- Instagram-ikon med link som åpnes i ny fane -->

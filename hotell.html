@@ -44,45 +44,26 @@
 
         <header id="hotelHead">
             <section class="galleri" aria-label="bildegalleri">
-                <article id="slide1" class="slide">
-                    <img id="slide1" class="slide" src="Bilder/landscape-2016308_640.jpg" alt="utsikt over et basseng med hvite solstoler rundt og blå himmel i bakgrunnen">
-                    <a class="forrige" href="#slide6"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide2"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
-                <article id="slide2" class="slide">
-                    <img id="slide2" class="slide" src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
-                    <a class="forrige" href="#slide1"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide3"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
-                <article id="slide3" class="slide">
-                    <img id="slide3" class="slide" src="Bilder/holiday-2733322_1280.jpg" alt="Kvinne som lener seg på en bassengkant med utsikt til bungalows på vannet">
-                    <a class="forrige" href="#slide2"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide4"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
-                <article id="slide4" class="slide">
-                    <img id="slide4" class="slide" src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
-                    <a class="forrige" href="#slide3"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide5"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
-                <article id="slide5" class="slide">
-                    <img id="slide5" class="slide" src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
-                    <a class="forrige" href="#slide4"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide6"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
-                <article id="slide6" class="slide">
-                    <img id="slide6" class="slide" src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
-                    <a class="forrige" href="#slide5"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></a>
-                    <a class="neste" href="#slide1"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></a>
-                </article>
+                <img id="slide1" class="slide" src="Bilder/landscape-2016308_640.jpg" alt="utsikt over et basseng med hvite solstoler rundt og blå himmel i bakgrunnen">
+                <img id="slide2" class="slide" src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
+                <img id="slide3" class="slide" src="Bilder/holiday-2733322_1280.jpg" alt="Kvinne som lener seg på en bassengkant med utsikt til bungalows på vannet">
+                <img id="slide4" class="slide" src="Bilder/beach-1836467_640.jpg" alt="fem reisende i badetøy som løper fra stranden til havet">
+                <img id="slide5" class="slide" src="Bilder/sea-4768869_1920.jpg" alt="Bilde av blått vann som bølger inn mot en strand">
+                <img id="slide6" class="slide" src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
+            </section>
+            <section>
+                <button onclick="scrollX" class="forrige"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></button>
+                <button onclick="scrollX" class="neste"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></button>
                 <i class="fa-regular fa-images" aria-label="bilde-ikon"></i>
-                <i class="fa-regular fa-heart" aria-label="favoritt-ikon"></i>
+                <i id="fav" class="fa-regular fa-heart" aria-label="favoritt-ikon"></i>
             </section>
             <section>
                 <nav>
-                    <a href="#">Oversikt</a>
-                    <a href="#">Fasiliteter</a>
-                    <a href="#">Rom</a>
+                    <a href="#oversikt" class="current">Oversikt</a>
+                    <a href="#fasiliteter">Fasiliteter</a>
+                    <a href="#romvalg">Rom</a>
                 </nav>
+                <hr>
             </section>
         </header>
         
@@ -95,19 +76,20 @@
                 <i class="fa-solid fa-sun" aria-label="fylt sol-ikon"></i>
                 <i class="fa-regular fa-sun" aria-label="tomt sol-ikon"></i>
                 <p class="score">8.9</p>
-                <p>Fantastisk</p>
-                <a href="#">Se alle anmeldelsene<i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
+                <p class="review">Fantastisk</p>
+                <a href="#">Se alle anmeldelsene <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i></a>
             </section>
 
             <section id="fasiliteter">
                 <h2>Fasiliteter</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                <p><i class="fa-solid fa-paw" aria-label="kjæledyr-ikon"></i>Kjæledyr-vennlig</p>
-                <p><i class="fa-solid fa-mug-hot" aria-label="frokost-ikon"></i>Frokost</p>
-                <p><i class="fa-solid fa-spa" aria-label="spa-ikon"></i>Spa</p>
-                <p><i class="fa-solid fa-bell-concierge" aria-label="romservice-ikon"></i>Romservice</p>
-                <p><i class="fa-solid fa-martini-glass" aria-label="drink-ikon"></i>Bar</p>
-                <p><i class="fa-solid fa-dumbbell" aria-label="trening-ikon"></i>Treningssenter</p>
+                <p id="ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
+                <p id="dyr"><i class="fa-solid fa-paw" aria-label="kjæledyr-ikon"></i>Kjæledyr-vennlig</p>
+                <p id="mat"><i class="fa-solid fa-mug-hot" aria-label="frokost-ikon"></i>Frokost</p>
+                <p id="spa"><i class="fa-solid fa-spa" aria-label="spa-ikon"></i>Spa</p>
+                <p id="bell"><i class="fa-solid fa-bell-concierge" aria-label="romservice-ikon"></i>Romservice</p>
+                <p id="bar"><i class="fa-solid fa-martini-glass" aria-label="drink-ikon"></i>Bar</p>
+                <p id="gym"><i class="fa-solid fa-dumbbell" aria-label="trening-ikon"></i>Treningssenter</p>
+                <a href="#">Se alle eiendomsfasiliteter<i class="fa-solid fa-angles-right"></i></a>
             </section>
 
             <section id="kart">
@@ -115,51 +97,57 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2397.85136256686!2d20.389288205977373!3d39.28487431647553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sno!4v1737303179982!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="kart over området"></iframe>
             </section>
             
+            <section id="sticker">
+                <p class="pris">8 733 kr</p>
+                <p>2 394 kr per natt</p>
+                <button id="velgRom">Velg rom</button>
+            </section>
+
             <section id="romvalg">
                 <h2>Velg rom</h2>
-                <article>
+                <article id="rom1">
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
                     <p class="score">8.9</p>
-                    <p>59 anmeldelser</p>
+                    <p class="review">59 anmeldelser</p>
                     <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
-                <article>
+                <article id="rom2">
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
                     <p class="score">8.9</p>
-                    <p>59 anmeldelser</p>
+                    <p class="review">59 anmeldelser</p>
                     <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
-                <article>
+                <article id="rom3">
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
                     <p class="score">8.9</p>
-                    <p>59 anmeldelser</p>
+                    <p class="review">59 anmeldelser</p>
                     <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
                     <p>Ink moms og avgifter</p>
                 </article>
-                <article>
+                <article id="rom4">
                     <img src="Bilder/beach-6514331_640.jpg" alt="oversiktsbilde som viser en isolert strand bland åssider og blått vann">
                     <h3>Junior Suite</h3>
                     <p>Plass til 2</p>
                     <p>Queen-size seng</p>
                     <p class="score">8.9</p>
-                    <p>59 anmeldelser</p>
+                    <p class="review">59 anmeldelser</p>
                     <p class="pris">6 789 kr</p>
                     <p>for 3 netter, 1 rom</p>
                     <p>2 263 kr per natt</p>
@@ -168,8 +156,8 @@
             </section>
         </main>
         
-        <footer id="footer">
-            <section id="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
+        <footer class="footer">
+            <section class="flagg"> <!-- Flagg og navn på de forskjellige landene flaggene representerer -->
                 <img src="Flagg/sweden.png" alt="svensk flagg">
                 <p>Sverige</p>
                 <img src="Flagg/denmark.png" alt="dansk flagg">
@@ -181,7 +169,7 @@
                 <img src="Flagg/netherlands.png" alt="nederlandsk flagg">
                 <p>Nederland</p>
             </section>
-            <section id="betaling">
+            <section class="betaling">
                 <h3>BETALINGSMETODER</h3>
                 <ul>
                     <li>
@@ -201,7 +189,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="nyheter">
+            <section class="nyheter">
                 <h3>NYHETER & TILBUD</h3>
                 <section>
                     <form>
@@ -215,7 +203,7 @@
                 </section>
                 <a href="#">Kjøp reisegavekort</a>
             </section>
-            <section id="service">
+            <section class="service">
                 <h3>KUNDESERVICE</h3>
                 <ul>
                     <li>
@@ -232,7 +220,7 @@
                     </li>
                 </ul>
             </section>
-            <section id="some">
+            <section class="some">
                 <h3>SOSIALE MEDIER</h3>
                 <ul> 
                     <!-- Instagram-ikon med link som åpnes i ny fane -->
