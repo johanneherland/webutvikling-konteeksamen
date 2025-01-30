@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Kobler til css-fil -->
     <link rel="stylesheet" href="ikoner/css/fontawesome.css"> <!-- Kobler til FontAwesome ikonbruk -->
     <link rel="stylesheet" href="ikoner/css/solid.css"> <!-- Kobler til fil for basic ikoner -->
+    <link rel="stylesheet" href="ikoner/css/regular.css"> <!-- Kobler til fil for regular ikoner -->
     <link rel="stylesheet" href="ikoner/css/brands.css"> <!-- Kobler til brands i FontAwesome -->
 </head>
 <body>
@@ -14,7 +15,7 @@
         <!-- Global header med navigasjon, logo og linker -->
         <header class="globalHead">
             <!-- Toppområde del 1 skal inneholde søke-ikon (linker til bestillingssiden), bruker-ikon (linker til «Min side») -->
-            <a href="order.html" class="søk"><i class="fa-regular fa-magnifying-glass" aria-label="søke-ikon"></i></a>
+            <a href="order.html" class="søk"><i class="fa-solid fa-magnifying-glass" aria-label="søke-ikon"></i></a>
             <details class="bruker">
                 <summary><i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i></summary>
                 <a href="#">
@@ -52,9 +53,9 @@
                 <img id="slide6" class="slide" src="Bilder/beach-666122_640.jpg" alt="brygge i tre som leder fra en hvit strand og grønne planter til runde cabanas omringet av blått vann">
             </section>
             <section>
-                <button onclick="scrollX" class="forrige"><i class="fa-regular fa-angle-left" aria-label="forrige bilde"></i></button>
-                <button onclick="scrollX" class="neste"><i class="fa-regular fa-angle-right" aria-label="neste bilde"></i></button>
-                <i class="fa-regular fa-images" aria-label="bilde-ikon"></i>
+                <i id="forrige" class="fa-solid fa-angle-left" aria-label="forrige bilde"></i>
+                <i id="neste" class="fa-solid fa-angle-right" aria-label="neste bilde"></i>
+                <i id="bildenr" class="fa-regular fa-images" aria-label="bilde-ikon"> 6</i>
                 <i id="fav" class="fa-regular fa-heart" aria-label="favoritt-ikon"></i>
             </section>
             <section>
@@ -83,12 +84,12 @@
             <section id="fasiliteter">
                 <h2>Fasiliteter</h2>
                 <p id="ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras imperdiet libero at ligula gravida consectetur. Suspendisse eget vulputate sem, vel finibus libero.</p> <!-- Kort ingress -->
-                <p id="dyr"><i class="fa-solid fa-paw" aria-label="kjæledyr-ikon"></i>Kjæledyr-vennlig</p>
-                <p id="mat"><i class="fa-solid fa-mug-hot" aria-label="frokost-ikon"></i>Frokost</p>
-                <p id="spa"><i class="fa-solid fa-spa" aria-label="spa-ikon"></i>Spa</p>
-                <p id="bell"><i class="fa-solid fa-bell-concierge" aria-label="romservice-ikon"></i>Romservice</p>
-                <p id="bar"><i class="fa-solid fa-martini-glass" aria-label="drink-ikon"></i>Bar</p>
-                <p id="gym"><i class="fa-solid fa-dumbbell" aria-label="trening-ikon"></i>Treningssenter</p>
+                <p id="dyr"><i class="fa-solid fa-paw" aria-label="kjæledyr-ikon"></i> Kjæledyr-vennlig</p>
+                <p id="mat"><i class="fa-solid fa-mug-hot" aria-label="frokost-ikon"></i> Frokost</p>
+                <p id="spa"><i class="fa-solid fa-spa" aria-label="spa-ikon"></i> Spa</p>
+                <p id="bell"><i class="fa-solid fa-bell-concierge" aria-label="romservice-ikon"></i> Romservice</p>
+                <p id="bar"><i class="fa-solid fa-martini-glass" aria-label="drink-ikon"></i> Bar</p>
+                <p id="gym"><i class="fa-solid fa-dumbbell" aria-label="trening-ikon"></i> Treningssenter</p>
                 <a href="#">Se alle eiendomsfasiliteter<i class="fa-solid fa-angles-right"></i></a>
             </section>
 

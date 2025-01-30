@@ -91,12 +91,39 @@ header.globalHead {
 }
 
 #valg {
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1) inset;
-    margin: 10px;
-    border-radius: 15px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
     height: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #6d6d6d;
+    summary {
+        color: black;
+    }
+    img {
+        border-radius: 5px;
+    }
+    #sol {
+        color: #ffcf40;
+        display: inline-block;
+    }
+    #oppsummering {
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: repeat(8, auto);
+    }
+    del {
+        grid-area: 7/1/8/3;
+    }
+    ins {
+        color: red;
+        font-weight: bolder;
+        grid-area: 8/1/9/3;
+        text-decoration: none;
+    }
 } 
 
 #bestilling {
@@ -104,8 +131,22 @@ header.globalHead {
     form fieldset {
         background-color: #e8e8e8;
         border: none;
+        border-radius: 5px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         legend {
             font-weight: bold;
+        }
+        label {
+            font-size: small;
+            font-weight: bolder;
+        }
+        input, select {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
         }
     }
 }
@@ -323,20 +364,47 @@ img {
         background: none;
         border: none;
     }
+    #forrige, #neste {
+        background-color: #252525;
+        opacity: 50%;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+    #bildenr {
+        background-color: #252525;
+        opacity: 50%;
+        height: 25px;
+        width: fit-content;
+        border-radius: 25px;
+        padding: 5px;
+        color: white;
+    }
     #fav {
         background-color: white;
         color: red;
         border-radius: 50%;
+        padding: 5px;
     }
     nav .current {
-        border-bottom: #1ca2c1;
+        border-bottom: 25px;
+        border-color: #1ca2c1;
         color: #1ca2c1;
+        font-weight: bolder;
     }
 }
 
 #oversikt {
+    h2 {
+    }
     i {
         color: #ffcf40;
+    }
+    p {
     }
     a {
         color: #1ca2c1;
@@ -348,6 +416,7 @@ img {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(6, auto);
     padding: 20px;
+    gap: 20px;
     h2 {
         grid-row: 1/2;
     }
@@ -378,7 +447,10 @@ img {
     }
 }
 
-
+#kart {
+    width: 1400px;
+    height: auto;
+}
 
 .review {
     font-weight: bold;
@@ -546,5 +618,9 @@ footer {
 
 
 @media only screen and (min-width: 680px) {
-
+    #tilbud {
+        display: flex;
+        overflow-x: visible;
+        max-width: 50%;
+    }
 }

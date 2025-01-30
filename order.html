@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css"> <!-- Kobler til css-fil -->
     <link rel="stylesheet" href="ikoner/css/fontawesome.css"> <!-- Kobler til FontAwesome ikonbruk -->
     <link rel="stylesheet" href="ikoner/css/solid.css"> <!-- Kobler til fil for basic ikoner -->
+    <link rel="stylesheet" href="ikoner/css/regular.css"> <!-- Kobler til fil for regular ikoner -->
     <link rel="stylesheet" href="ikoner/css/brands.css"> <!-- Kobler til brands i FontAwesome -->
 </head>
 <body>
@@ -15,7 +16,7 @@
         <!-- Global header med navigasjon, logo og linker -->
         <header class="globalHead">
             <!-- Toppområde del 1 skal inneholde søke-ikon (linker til bestillingssiden), bruker-ikon (linker til «Min side») -->
-            <a href="order.html" class="søk"><i class="fa-regular fa-magnifying-glass" aria-label="søke-ikon"></i></a>
+            <a href="order.html" class="søk"><i class="fa-solid fa-magnifying-glass" aria-label="søke-ikon"></i></a>
             <details class="bruker">
                 <summary><i class="fa-regular fa-circle-user" aria-label="bruker-ikon"></i></summary>
                 <a href="#">
@@ -63,28 +64,32 @@
 
             <section>
                 <details id="valg">
-                    <summary>Dine valg<i class="fa-solid fa-angle-right"></i></summary>
+                    <summary>Dine valg <i class="fa-solid fa-angle-right"></i></summary>
                     <img src="Bilder/landscape-2016308_640.jpg" alt="utsikt over et basseng med hvite solstoler rundt og blå himmel i bakgrunnen">
-                    <h2>Lorem Ipsum</h2>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-regular fa-sun"></i>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Hellas, Parga</p>
-                    <i class="fa-regular fa-calendar"></i>
-                    <p>Man 5 mai - man 12 mai 2025</p>
-                    <i class="fa-regular fa-user"></i>
-                    <p>2 Voksne</p>
-                    <i class="fa-solid fa-bed"></i>
-                    <p>Deluxerom, Balkong og ikke spesifisert utsikt</p>
-                    <i class="fa-solid fa-utensils"></i>
-                    <p>Frokostbuffé</p>
-                    <i class="fa-solid fa-plane-departure"></i>
-                    <p>Oslo Lufthavn - Preveza</p>
-                    <del>22 003,-</del>
-                    <ins>19 803,-</ins>
+                    <h2>Parga Beach</h2>
+                    <figure id="sol">
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-solid fa-sun"></i>
+                        <i class="fa-regular fa-sun"></i>
+                    </figure>
+                    <section id="oppsummering">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Hellas, Parga</p>
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Man 5 mai - man 12 mai 2025</p>
+                        <i class="fa-regular fa-user"></i>
+                        <p>2 Voksne</p>
+                        <i class="fa-solid fa-bed"></i>
+                        <p>Deluxerom, Balkong og ikke spesifisert utsikt</p>
+                        <i class="fa-solid fa-utensils"></i>
+                        <p>Frokostbuffé</p>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <p>Oslo Lufthavn - Preveza</p>
+                        <del>22 003,-</del>
+                        <ins>19 803,-</ins>
+                    </section>
                 </details>
             </section>
         </main>
@@ -100,7 +105,7 @@
                         <input type="text" id="enavn1" name="enavn1" required>
                         <label for="fødselsdato1">Fødselsdato:</label>
                         <input type="date" id="fødselsdato1" name="fødselsdato1" max="2007-01-31" required>
-                        <p>Kjønn:</p>
+                        <label>Kjønn:</label>
                         <input type="radio" id="kvinne1" name="kjønn1" value="kvinne1" required>
                         <label for="kvinne1">kvinne</label>
                         <input type="radio" id="mann1" name="kjønn1" value="mann1">
@@ -138,7 +143,10 @@
                         <input type="radio" id="mann2" name="kjønn2" value="mann2">
                         <label for="mann2">mann</label>
                     </fieldset>
-                    <input class="btn" type="submit" value="Fullfør bestilling">
+                    <button class="btn">
+                        <input class="btn" type="submit" value="Siste trinn">
+                        <i class="fa-solid fa-arrow-right" aria-label="les mer-ikon"></i>
+                    </button> 
                 </form>
             </section>
 
